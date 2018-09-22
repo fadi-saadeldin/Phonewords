@@ -10,12 +10,6 @@ import Phonewords from '../phoneWords/Phonewords'
 class Landing extends Component {
   constructor() {
     super()
-    this.state = {
-      numbers: '',
-      phonewords: [],
-      error: false,
-    }
-
     this.handleInput = this.handleInput.bind(this)
     this.handleClick = this.handleClick.bind(this)
     this.handleClear = this.handleClear.bind(this)
@@ -23,11 +17,12 @@ class Landing extends Component {
 
   handleInput(numbers) {
    this.props.phoneChanged(numbers);
+   if(numbers){
    this.props.getPhoneWords(numbers);
   }
+}
 
   handleClick(number) {
-    console.log(this.props.phone+number)
     this.props.phoneChanged(this.props.phone+number);
     this.props.getPhoneWords(this.props.phone+number);
   }

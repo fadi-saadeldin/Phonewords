@@ -18,7 +18,6 @@ class App extends Component {
             <div className="wrapper">
             <Landing />
             </div>
-            <Footer />
           </div>
        
       </Provider>
