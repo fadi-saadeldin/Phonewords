@@ -7,7 +7,6 @@ class Navbar extends Component {
         <div className="container">
           <div className="row">
                 <div className="app-logo"/>
-          
           </div>
         </div>
       </nav>

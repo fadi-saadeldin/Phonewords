@@ -14,25 +14,22 @@ class Landing extends Component {
     this.handleClick = this.handleClick.bind(this)
     this.handleClear = this.handleClear.bind(this)
   }
-
+//handle in change input
   handleInput(numbers) {
    this.props.phoneChanged(numbers);
    if(numbers){
    this.props.getPhoneWords(numbers);
   }
 }
-
+//handle on number pad click
   handleClick(number) {
     this.props.phoneChanged(this.props.phone+number);
     this.props.getPhoneWords(this.props.phone+number);
   }
-
+//handle on press clear 
   handleClear() {
   this.props.clearWords();
   }
-
-  
-
   render () {
     if (this.props.error) return <div><h2>Seems there was an error!</h2></div>
 
