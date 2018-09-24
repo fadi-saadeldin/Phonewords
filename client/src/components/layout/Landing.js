@@ -31,8 +31,6 @@ class Landing extends Component {
   this.props.clearWords();
   }
   render () {
-    if (this.props.error) return <div><h2>Seems there was an error!</h2></div>
-
     return (
       <div className="wrapper">
         <NumberInput
@@ -48,6 +46,7 @@ class Landing extends Component {
           />
         }
         <Phonewords phonewords={this.props.wordsList} />
+      {(this.props.error) ? <div><h2>Seems there was an error!</h2></div>:<div/>}
       </div>
     )
   }
