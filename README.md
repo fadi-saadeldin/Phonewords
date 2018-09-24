@@ -3,8 +3,8 @@
 ### Getting Started
 
 ```
-> git clone https://github.com/fadi-saadeldin/phonewords.git
-> cd phonewords
+>  git clone https://github.com/fadi-saadeldin/phonewords.git
+>  cd phonewords
 >  **Install dependencies for server**
     npm install
 >  **Install dependencies for client**
